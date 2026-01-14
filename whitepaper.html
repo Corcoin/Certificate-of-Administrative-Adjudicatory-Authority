@@ -117,9 +117,13 @@ ul {
 
     <h3>Payment / Engagement</h3>
     <p>Clients can engage services via secure payment portals. Example button for your site:</p>
-    <a href="https://www.paypal.com/paypalme/BrianWessonALJ" target="_blank" class="button">
-        Pay / Book Texas ALJ Services
-    </a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                <input type="hidden" name="cmd" value="_xclick">
+                <input type="hidden" name="business" value="brianwesson0@gmail.com">
+                <input type="hidden" name="item_name" value="Texas Administrative Law Judge Services">
+                <input type="hidden" name="currency_code" value="USD">
+                <input type="submit" class="button" value="Book & Pay for Services">
+            </form>
 
     <p class="small">All payments and engagements should include formal engagement letters or contracts specifying confidentiality and scope.</p>
 
